@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jay Mondal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jay Mondal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">About</a></li>
+          <li><a href="#about">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          
+          <li><a href="#blogs">Articles</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jay Mondal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">About</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          
+          <li><a href="#blogs" onclick="toggleMenu()">Articles</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/jay.png" alt="Jay Mondal profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jaydeep Mondal</h1>
+        <p class="section__text__p2">Learning AI and Machine Learning | Started with Python and Pandas.</p>
+        <div class="boo">
+          <p>My latest project is an <mark>automated trading bot</mark> made with python.</p>
+          <button class="foo" onclick="location.href='./#contact'">
+            check now
+          </button>
+        </div>
+        
+        
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='mailto:freelancer.jay.mondal@gmail.com'">
+            Contact Me
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/jay-mondal-428375275/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Freelancer-jay'"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <p class="section__text__p1"></p>
+      
+      <h1 class="title"> More About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/43918.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Profesional Experience</h3>
+              <p>I am looking forward to grap an opportunity to work and gain professonal experience.</p>
+              
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Currently Learning....</h3>
+              <p>Scientific Computing with Python.<br />Through <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/">Freecodecamp.org</a></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              
+              <br>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="projects">
+      <!--<p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>-->
+      <!--<div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      
+    </section>
+    <section id="blogs">
+      <!--<p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Blogs and Articles</h1>-->
+      <!--<div class="experience-details-container">
+        <div class="details-container1">
+          <h2 class="experience-sub-title"><mark style="background: rgb(199, 253, 1)">blogs</mark></h2>
+          <div class="loo1">
+            <div><image class="lee" src="assets/project-1.png"/></div>
+            <div class="loo">
+              <h3>hello</h3>
+              <p>I am the devil of my world.</p>
+              <button class="leo">view now</button>
+            </div>
+          </div>
+          <div class="loo1">
+            <div><image class="lee" src="assets/project-1.png"/></div>
+            <div class="loo">
+              <h3>hello</h3>
+              <p>I am the devil of my world.</p>
+              <button class="leo">view now</button>
+            </div>
+          </div><div class="loo1">
+            <div><image class="lee" src="assets/project-1.png"/></div>
+            <div class="loo">
+              <h3>hello</h3>
+              <p>I am the devil of my world.</p>
+              <button class="leo">view now</button>
+            </div>
+          </div>
+          <h2 class="experience-sub-title"><mark style="background: rgb(199, 253, 1)">Articles</mark></h2>
+          <div class="loo1">
+            <div><image class="lee" src="assets/project-1.png"/></div>
+            <div class="loo">
+              <h3>hello</h3>
+              <p>I am the devil of my world.</p>
+              <button class="leo">view now</button>
+            </div>
+          </div>
+          <div class="loo1">
+            <div><image class="lee" src="assets/project-1.png"/></div>
+            <div class="loo">
+              <h3>hello</h3>
+              <p>I am the devil of my world.</p>
+              <button class="leo">view now</button>
+            </div>
+          </div><div class="loo1">
+            <div><image class="lee" src="assets/project-1.png"/></div>
+            <div class="loo">
+              <h3>hello</h3>
+              <p>I am the devil of my world.</p>
+              <button class="leo">view now</button>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <div class="gp"></div>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="vee">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <div class="contactmail"><p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p></div>
+          
+        </div>
+        <div class="vee1">
+          <a href="https://www.twitter.com">
+            <img
+            src="./assets/x.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"/>
+          </a>
+        </div>
+        <div class="vee1">
+          <a href="https://github.com/Freelancer-jay">
+            <img
+            src="./assets/github.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"/>
+          </a>
+        </div>
+        <div class="vee1">
+          <a href="https://www.linkedin.com/in/jay-mondal-428375275/">
+            <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"/>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footerp">
+        ©️ This website is copyrighted by Jay Mondal.
+      </div>
+  
+    </footer>
+    
+    
+    <script src="script.js"></script>
+  </body>
+</html>
